@@ -2,7 +2,7 @@
 
 Welcome to the Battery_Parameters_Identification wiki!
 
-In this repository, second order equivalent circuit model circuit models a battery is identified by using Recursive Least Square (RLS) method. 
+In this repository, parameters of the second order equivalent circuit model of a battery is identified by using Recursive Least Square (RLS) method. 
 
 By using on-line recursive identfication, Extended Kalman Filter is employed for state prediction.
 
