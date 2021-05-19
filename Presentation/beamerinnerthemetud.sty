@@ -1,0 +1,26 @@
+\DeclareOptionBeamer{shadow}[true]{\def\beamer@themerounded@shadow{#1}}
+\ExecuteOptionsBeamer{shadow=false}
+\ProcessOptionsBeamer
+
+\mode<presentation>
+
+\defbeamertemplate*{title page}{}{
+	\begin{center}
+		{\color{tudCyan}\Large\inserttitle}\\
+		\vspace{0.5cm}
+		{\small\insertauthor}\\
+		\vspace{0.8cm}
+		{\scriptsize\insertinstitute}\\
+		\vspace{0.5cm}
+		{\scriptsize\insertdate}
+	\end{center}
+}
+
+\addtobeamertemplate{frametitle}{\hspace*{0.03cm}}
+
+\setbeamertemplate{blocks}[rounded][]
+\setbeamertemplate{items}[circle]
+\setbeamertemplate{sections/subsections in toc}[circle]
+
+\mode
+<all>

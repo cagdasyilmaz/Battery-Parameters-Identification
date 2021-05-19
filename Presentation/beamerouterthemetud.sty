@@ -1,0 +1,56 @@
+\mode<presentation>
+
+\setbeamercolor{author in head/foot}{parent=palette tertiary}
+\setbeamercolor{title in head/foot}{parent=palette secondary}
+\setbeamercolor{date in head/foot}{parent=palette primary}
+\setbeamercolor{section in head/foot}{parent=palette tertiary}
+\setbeamercolor{subsection in head/foot}{parent=palette primary}
+\setbeamercolor{navigtion symbols in head/foot}{parent=palette primary}
+\setbeamercolor{logo in head/foot}{parent=palette quaternary}
+
+\setbeamercolor*{navigation symbols}{parent=palette primary}
+\setbeamercolor*{navigation symbols dimmed}{parent=palette primary,fg=parent.fg!20!parent.bg}
+
+\setbeamersize{text margin left=0.6cm}
+\setbeamersize{text margin right=0.6cm}
+
+\defbeamertemplate*{sidebar left}{}{
+
+}
+
+\defbeamertemplate*{footline}{}{
+	\leavevmode
+	\begin{beamercolorbox}[wd=\paperwidth,ht=4ex,dp=2.5ex,center]{date in head/foot}
+	\begin{columns}[t]
+	\column{.44\textwidth}
+	\begin{minipage}[c]{2cm}
+	\includegraphics[width=1cm]{tud_white.pdf}
+	\vspace{0.11cm}
+	\end{minipage}
+	\column{.44\textwidth}
+	\hfill \insertframenumber{} / \inserttotalframenumber
+	\end{columns}
+	\end{beamercolorbox}
+	\vskip0pt
+}
+
+\defbeamertemplate*{minimal footline}{}{
+	\leavevmode
+	\begin{beamercolorbox}[wd=\paperwidth,ht=4ex,dp=2.5ex,center]{date in head/foot}
+	\begin{columns}[t]
+	\column{.44\textwidth}
+	\begin{minipage}[c]{2cm}
+	\includegraphics[width=1cm]{tud_white.pdf}
+	\vspace{0.11cm}
+	\end{minipage}
+	\column{.44\textwidth}
+	\end{columns}
+	\end{beamercolorbox}
+	\vskip0pt
+}
+
+% this normally contains the navigation links
+\defbeamertemplate*{sidebar right}{}{}
+
+\mode
+<all>
